@@ -174,7 +174,8 @@ function parseAnimation(name: string, figuraAnim: FiguraAnim) {
 	const anim = new (Blockbench as any).Animation({
 		name,
 		length: figuraAnim.length,
-		snapping: figuraAnim.snapping
+		snapping: figuraAnim.snapping,
+		loop: figuraAnim.loop
 	});
 
 	forEachEntry(figuraAnim.parts ?? {}, (path, kfholder) => {

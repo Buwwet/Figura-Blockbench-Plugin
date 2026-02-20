@@ -177,6 +177,7 @@ function compile_animation(anim: _Animation): FiguraAnim {
 		length: anim.length,
 		snapping: anim.snapping,
 		parts,
+		loop: anim.loop,
 		script_keyframes: [] // TODO
 	}
 }
