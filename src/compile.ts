@@ -178,6 +178,8 @@ function compile_animation(anim: _Animation): FiguraAnim {
 		snapping: anim.snapping,
 		parts,
 		loop: anim.loop,
+		priority: anim.priority,
+		anim_type: anim.anim_type,
 		script_keyframes: [] // TODO
 	}
 }

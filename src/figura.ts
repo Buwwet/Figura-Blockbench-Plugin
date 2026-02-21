@@ -2,6 +2,7 @@ import "./style.css"
 import { create_format } from './format';
 import { setup_mimic_parts } from './features/mimic_parts';
 import { setup_vanilla_texture_override } from './features/vanilla_texture_override';
+import { setup_animation_extension } from "./features/animation_extension";
 
 // Global constants
 export const PLUGIN_ID = 'figura';
@@ -77,6 +78,7 @@ BBPlugin.register(PLUGIN_ID, {
 		});
 
 		setup_mimic_parts();
+		setup_animation_extension();
 		setup_vanilla_texture_override();
 		create_format();
 	},

@@ -1,6 +1,12 @@
 
 // Declare things to extend the blockbench type definitions.
 
+// Add our own properties to the _Animation class
+interface _Animation {
+	priority?: number,
+	anim_type?: string
+}
+
 // Add our own properties to the Group class (and options) so we don't need to cast to set/get them.
 interface Group {
 	mimic_part?: string,

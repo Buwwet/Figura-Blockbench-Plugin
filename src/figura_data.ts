@@ -99,6 +99,8 @@ export type FiguraAnim = {
 	snapping?: number,
 	strength?: number,
 	loop?: 'once' | 'hold' | 'loop', // Default 'once'
+	priority?: number, // Default '1'
+	anim_type?: string,
 	parts?: { [part_path: string]: FiguraKeyframeHolder }, // Default {}
 	script_keyframes?: FiguraScriptKeyframe[] // Default []
 }

@@ -175,7 +175,9 @@ function parseAnimation(name: string, figuraAnim: FiguraAnim) {
 		name,
 		length: figuraAnim.length,
 		snapping: figuraAnim.snapping,
-		loop: figuraAnim.loop
+		loop: figuraAnim.loop,
+		priority: figuraAnim.priority,
+		anim_type: figuraAnim.anim_type
 	});
 
 	forEachEntry(figuraAnim.parts ?? {}, (path, kfholder) => {
